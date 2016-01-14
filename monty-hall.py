@@ -1,8 +1,16 @@
+"""
+Use this script to prove to oneself that switching doors yields a 2/3, not 1/2,
+probability of winning the goat. This script implements a Monte Carlo simulation.
+
+If the script takes too long, try reducing numTrials (however beware as Monte Carlo
+simulations are quite slow to converge).
+"""
+
 import random
 
 prob_car = 0;
 numWithCar = 0;
-numTrials = 10000;
+numTrials = 1000000;
 
 def monteCarlo():
     doors = [1,0,0]
